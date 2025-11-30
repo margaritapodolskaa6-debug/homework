@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis&display=swap);
+
+body {
+    font-family: Dosis, serif;
+    background: linear-gradient(90deg, #301698 0%, #141616 100%);
+}
+
+.nav-link {
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(113, 159, 181);
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(139, 153, 164);
+}
+
+.sidebar {
+    color: rgb(136, 104, 241);
+    background: linear-gradient(90deg, #301698 0%, #141616 100%);
+
+}
+
+.card {
+    background: linear-gradient(90deg, #301698 0%, #141616 100%);
+    color: rgb(136, 104, 241);
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(136, 104, 241);
+}
+
+footer,
+.btn-outline-primary {
+    background: linear-gradient(90deg, #141616 0%, #301698 100%);
+}
+
+.slide-text,
+.footer-text {
+    color: rgb(136, 104, 241);
+    margin: auto auto;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: rgb(136, 104, 241);
+}
+
+.call-anim {
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 0 50%;
+    }
+
+    10% {
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        transform: rotate(2deg);
+    }
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
